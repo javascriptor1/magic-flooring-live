@@ -128,6 +128,22 @@ body {
                                     background-size: cover;
                                    
                                   }
+
+                                  .carousel-image-spc0 {
+                                    background: url("../img/spc/spc-slide0.jpg");
+                                    background-size: cover;
+                                   
+                                  }
+                                  .carousel-image-spc1 {
+                                    background: url("../img/spc/spc-slide1.jpg");
+                                    background-size: cover;
+                                   
+                                  }
+                                  .carousel-image-spc2 {
+                                    background: url("../img/spc/spc-slide2.jpg");
+                                    background-size: cover;
+                                   
+                                  }
             
             .fa {
               font-size: 30px; }
