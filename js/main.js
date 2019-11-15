@@ -4,11 +4,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event){
   $(this).ekkoLightbox();
 });
 
-$('.slider').slick({
-  infinite: true,
-  slideToShow:1,
-  slideToScroll:1
-});
+
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
