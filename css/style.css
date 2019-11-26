@@ -144,6 +144,21 @@ body {
                                     background-size: cover;
                                    
                                   }
+                                  .carousel-image-sceno {
+                                    background: url("../img/wallpaper/sceno/sceno.jpg");
+                                   
+                                   
+                                  }
+                                  .carousel-image-sceno1 {
+                                    background: url("../img/wallpaper/sceno/sceno1.jpg");
+                                    
+                                   
+                                  }
+                                  .carousel-image-sceno2 {
+                                    background: url("../img/wallpaper/sceno/sceno2.jpg");
+                                    
+                                   
+                                  }
             
             .fa {
               font-size: 30px; }
