@@ -159,6 +159,35 @@ body {
                                     
                                    
                                   }
+                                
+                                .carousel-image-aruba {
+                                  background: url("../img/wallpaper/aruba/aruba.jpg");
+                                 
+                                 
+                                }
+                                .carousel-image-aruba1 {
+                                  background: url("../img/wallpaper/aruba/aruba1.jpg");
+                                  
+                                 
+                                }
+                                .carousel-image-aruba2 {
+                                  background: url("../img/wallpaper/aruba/Aruba2.jpg");
+                                 
+                                }
+                                .carousel-image-grace {
+                                  background: url("../img/wallpaper/grace/grace.jpg");
+                                 
+                                 
+                                }
+                                .carousel-image-grace1 {
+                                  background: url("../img/wallpaper/grace/grace1.jpg");
+                                  
+                                 
+                                }
+                                .carousel-image-grace2 {
+                                  background: url("../img/wallpaper/grace/grace2.jpg");
+                                 
+                                }
             
             .fa {
               font-size: 30px; }
