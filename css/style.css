@@ -311,7 +311,10 @@ body {
                               margin-bottom: 0px;
                               padding: 15px;
                             }
-
+          
+                            .form-control::-webkit-input-placeholder {
+                              color: #353333;
+                            }
 
  
 
