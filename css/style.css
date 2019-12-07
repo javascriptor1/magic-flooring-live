@@ -265,6 +265,13 @@ body {
                         font-weight: 700;
                       }
 
+                      section div  h3 { 
+                        font-weight: 700;
+                      }
+                      section div  p { 
+                        font-weight: 700;
+                      }
+
                       #page-header p {
                         font-weight: 500;
                       }
