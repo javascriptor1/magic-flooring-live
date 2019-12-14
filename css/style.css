@@ -300,6 +300,11 @@ body {
                               color:#ff9955;
                               margin: 5px;
                             }
+
+                            .btn-social:hover {
+                              color:#fcfcfc;
+                              margin: 5px;
+                            }
                             
                             
                             
@@ -347,6 +352,8 @@ body {
       #myBtn:hover {
         background-color: #ff9955; /* Add orange background on hover */
       }
-                           
+                          
+
+     
                             
                             
