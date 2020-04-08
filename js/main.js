@@ -4,8 +4,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event){
   $(this).ekkoLightbox();
 });
 
-
-
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -25,3 +23,56 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Calcuation for area/cost
+// get the button
+  myCalcButton = document.getElementById("btn-calc");
+  myCalcButton.addEventListener('click', function(){
+
+  let length = document.getElementById("room-length").value
+  let width = document.getElementById("room-width").value
+  let areaTotal = length*width
+  let wastage = areaTotal * 0.05
+  let fixArea = areaTotal.toFixed(2)
+  let areaAfterWastage = parseFloat(fixArea) + parseFloat(wastage)
+  if (length <1 || width <1){
+    alert("يرجى اختيار قيمة أكبر")
+    document.getElementById("room-length").value = ""
+      document.getElementById("room-width").value = ""
+    document.getElementById("area").innerText = "00.00"
+  } else {
+    document.getElementById("area").innerText = areaAfterWastage 
+  }
+
+  // calculation for cost based on flooring selected.
+
+    let flooring = document.getElementById("flooring");
+    let selectedFlooring = flooring.options[flooring.selectedIndex].value;
+    let chineseCost
+    let cost7mm
+    let cost8mm
+
+    if (selectedFlooring === "defualt"){
+      alert (" يرجى اختيار نوعية الباركيه لحساب السعر")
+    }
+
+    if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5) ){
+        cost7mm = areaAfterWastage * 60
+       document.getElementById("cost").innerText = Math.round(cost7mm)
+    } else{
+      document.getElementById("cost").innerText = "00.00"
+    }
+    if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
+      cost8mm = areaAfterWastage * 65
+      document.getElementById("cost").innerText = Math.round(cost8mm)
+    }else{
+    document.getElementById("cost").innerText = "00.00"
+    }
+    if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
+      chineseCost = areaAfterWastage * 55
+      document.getElementById("cost").innerText = Math.round(chineseCost)
+    }else{
+      document.getElementById("cost").innerText = "00.00"
+    }
+})
+
