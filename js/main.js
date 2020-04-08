@@ -40,6 +40,7 @@ function topFunction() {
     document.getElementById("room-length").value = ""
       document.getElementById("room-width").value = ""
     document.getElementById("area").innerText = "00.00"
+    document.getElementById("cost").innerText = "00.00"
   } else {
     document.getElementById("area").innerText = areaAfterWastage 
   }
@@ -56,23 +57,18 @@ function topFunction() {
       alert (" يرجى اختيار نوعية الباركيه لحساب السعر")
     }
 
-    if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5) ){
-        cost7mm = areaAfterWastage * 60
-       document.getElementById("cost").innerText = Math.round(cost7mm)
-    } else{
-      document.getElementById("cost").innerText = "00.00"
+    
+    if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
+      chineseCost = areaAfterWastage * 55
+      document.getElementById("cost").innerText = Math.round(chineseCost)
+    }
+    if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5)){
+      cost7mm = areaAfterWastage * 60
+      document.getElementById("cost").innerText = Math.round(cost7mm)
     }
     if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
       cost8mm = areaAfterWastage * 65
       document.getElementById("cost").innerText = Math.round(cost8mm)
-    }else{
-    document.getElementById("cost").innerText = "00.00"
-    }
-    if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
-      chineseCost = areaAfterWastage * 55
-      document.getElementById("cost").innerText = Math.round(chineseCost)
-    }else{
-      document.getElementById("cost").innerText = "00.00"
     }
 })
 
