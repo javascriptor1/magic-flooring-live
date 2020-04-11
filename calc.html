@@ -15,10 +15,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>الأرضيات الساحرة حاسبة الباركيه</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/mf-logo.png">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+  input[type="number"]::placeholder {  
+                  
+        /* Firefox, Chrome, Opera */ 
+        text-align: center; 
+        color: rgba(8, 8, 8, 0.295);
+    } 
+  
+    input[type="number"]:-ms-input-placeholder { 
+          
+        /* Internet Explorer 10-11 */ 
+        text-align: center; 
+    }
+
+    input:focus {
+      outline:0px !important;
+      -webkit-appearance:none;
+      box-shadow: none !important;
+      
+    }
+        ::-webkit-input-placeholder {
+      text-align: center;
+    }
+
+   input {
+     text-align: center;
+   }
+</style>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
@@ -53,15 +80,31 @@
     </div>
   </nav>
 
-  <div class="mainCalc text-center " style="min-height: 68vh ; max-width: 100%; margin:0px auto; background: rgba(204, 204, 204, 0.103);">
-    <h4 class=" m-2">حاسبة تكلفة الباركيه</h4>
+  <div class="mainCalc text-center " style="min-height: 68vh ; margin:0px auto; background: rgba(204, 204, 204, 0.103);">
+    <h4 class=" p-3">حاسبة تكلفة الباركيه</h4>
 
     <h6>لحساب مساحة الموقع والتكلفة ، أدخل أبعاد الموقع ( الطول والعرض ) واختر نوع الباركيه المطلوب</h6>
 
-    <label for="room-legnth">الطول</label> 
-    <input type="number" id="room-length" class="p-1 m-1 text-center" placeholder=".. الطول" ><br>
-    <label for="room-width">العرض</label> 
-    <input type="number" id="room-width" class="p-1 m-1 text-center"placeholder=".. العرض" >
+    <div style="max-width: 650px;margin: 0 auto;" >
+      <div class="input-group mb-3">
+        <div class="input-group-addon">
+          <span class="input-group-text" >Length  <img class="ml-2"src="lengthOptimized.svg"/></span>
+        </div>
+        <input type="number" id="room-length" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="أدخل طول الموقع أو الغرفة">
+        <div class="input-group-addon">
+          <span class="input-group-text pl-2" style="width: 7rem;" > <img class="mr-2"src="lengthOptimized.svg"/> الطول </span>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-addon">
+          <span class="input-group-text" style="width: 6.3rem;" >Width  <img class="ml-2"src="widthOptimized.svg"/></span>
+        </div>
+        <input type="number" id="room-width" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="أدخل عرض الموقع أو الغرفة">
+        <div class="input-group-addon">
+          <span class="input-group-text pl-2" style="width: 7rem;" > <img class="mr-2"src="widthOptimizedAR.svg"/> العرض </span>
+        </div>
+      </div>
+    </div>
    
     <p class="mt-1">اختر نوع الباركيه المطلوب من القائمة</p>
     <select id="flooring" required>
@@ -70,8 +113,8 @@
 			<option value="7mm" >ألماني/أوكراني سماكة 7 ملم</option>
 			<option value="8mm" >ألماني/أوكراني سماكة 8 ملم</option>
 		
-		</select>
-
+    </select>
+         
 
     <br>
 
