@@ -378,12 +378,12 @@ body {
    
   font-size: 16px;
 	font-family: sans-serif;
-	font-weight: 700;
+  font-weight: 700;
+  text-align: center;
 	color: #444;
 	line-height: 1.3;
 	padding: .6em 1.4em .5em .8em;
-	/* width: 50%;
-	max-width: 100%; */
+  width: 350px;
 	box-sizing: border-box;
 	margin: 0;
 	border: 1px solid rgb(7, 7, 7);
@@ -399,6 +399,11 @@ body {
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
     }
+
+    select { 
+      width: 400px; 
+      text-align-last:center;
+     }
 
     #flooring:hover {
       border-color: #888;
@@ -432,12 +437,14 @@ body {
         font-family:Georgia;
         font-size:16px;
         font-weight:bold;
-        padding:9px 40px;
+        padding-top:3px;
         text-decoration:none;
         text-shadow:-2px 0px 11px #ffee66;
         outline: none;
         margin-top: 5px;
         margin-bottom: 5px;
+        width: 350px;
+        height: 38px;
       }
       #btn-calc:hover {
         background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
@@ -451,7 +458,6 @@ body {
       text-align: center;
       padding-right: 15px;
       font-weight: bold;
-      /* line-height: 0.5px; */
       color: red;
     }
 

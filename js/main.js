@@ -36,9 +36,12 @@ function topFunction() {
   let fixArea = areaTotal.toFixed(2)
   let areaAfterWastage = parseFloat(fixArea) + parseFloat(wastage)
   if (length <1 || width <1){
-    alert("يرجى اختيار قيمة أكبر")
+    document.querySelector(".error").style.display = "block"
+    setTimeout(function(){
+      document.querySelector(".error").style.display = "none"
+    },3000)
     document.getElementById("room-length").value = ""
-      document.getElementById("room-width").value = ""
+    document.getElementById("room-width").value = ""
     document.getElementById("area").innerText = "00.00"
     document.getElementById("cost").innerText = "00.00"
   } else {
