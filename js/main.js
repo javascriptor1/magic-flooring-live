@@ -1,4 +1,11 @@
 
+
+    let loader = document.getElementById("loader");
+      window.onload = function() {
+      loader.style.display = 'none';
+    }
+ 
+
 $(document).on('click', '[data-toggle="lightbox"]', function(event){
   event.preventDefault();
   $(this).ekkoLightbox();
