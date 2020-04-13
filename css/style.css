@@ -10,7 +10,7 @@ body {
   padding-right: 1em !important; }
   
   .navbar .nav-item.active {
-    border-left: #ff9955 1px solid; }
+    border-right: #ff9955 1px solid; }
     
     .carousel-item {
       height: 450px; }

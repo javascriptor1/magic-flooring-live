@@ -62,6 +62,7 @@ function topFunction() {
     let chineseCost
     let cost7mm
     let cost8mm
+    let spc
 
     if (selectedFlooring === "defualt"){
       alert (" يرجى اختيار نوعية الباركيه لحساب السعر")
@@ -79,6 +80,10 @@ function topFunction() {
     if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
       cost8mm = areaAfterWastage * 65
       document.getElementById("cost").innerText = Math.round(cost8mm)
+    }
+    if (selectedFlooring === "spc" && ( width >0.5 && length >0.5)){
+      spc = areaAfterWastage * 100
+      document.getElementById("cost").innerText = Math.round(spc)
     }
 })
 
