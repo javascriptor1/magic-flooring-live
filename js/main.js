@@ -87,3 +87,12 @@ function topFunction() {
     }
 })
 
+  // DISABLE SCROLL IN INPUT FIELDS TYPED NUMBER
+    var inputTypeNumbers = document.querySelectorAll("input[type=number]");
+      for (var a = 0; a < inputTypeNumbers.length; a++) {
+      inputTypeNumbers[a].onwheel = function (event) {
+      event.target.blur();
+      };
+    }
+  
+
