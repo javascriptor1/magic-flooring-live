@@ -353,8 +353,9 @@ body {
         background-color: #ff9955; /* Add orange background on hover */
       }
 
-      .corona {
-        text-align: center;
+      .corona h3{
+        font-size: 16px;
+        font-weight: 700;
         
       }
 
