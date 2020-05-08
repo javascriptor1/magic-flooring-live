@@ -461,7 +461,21 @@ body {
       font-weight: bold;
       color: red;
     }
+    #outstock{
+      position: relative;
+    }
 
+    #out-of-stock{
+      color: #ff9955;
+      background-color: rgba(0, 0, 0, 1.507);
+      padding: 4px;
+      font-weight: bold;
+      border-radius: 10px;
+      position: absolute;
+      top: 25px;
+      left: 22px;
+      transform: rotate(-45deg);
+    }
 
     .loader-wrapper {
 	
