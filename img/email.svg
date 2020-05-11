@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="6.8469338mm"
+   height="6.8469353mm"
+   viewBox="0 0 6.8469338 6.8469353"
+   version="1.1"
+   id="svg4668"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="email.svg">
+  <defs
+     id="defs4662" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-29.127736"
+     inkscape:cy="-41.69326"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4665">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-119.70506,-130.95506)">
+    <g
+       id="g8"
+       transform="matrix(0.01397342,0,0,0.01397333,119.70505,130.95506)"
+       style="fill:#bf9a2f;fill-opacity:1"
+       inkscape:export-filename="C:\Users\root_x90\Desktop\email.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         d="M 485.825,177.806 251.252,2.084 c -3.706,-2.779 -8.797,-2.779 -12.503,0 L 4.181,177.801 c -2.626,1.97 -4.174,5.061 -4.174,8.344 0,0.002 0,0.003 0,0.005 H 0.001 V 479.575 C 0.001,485.333 4.67,490 10.427,490 h 469.146 c 5.758,0 10.425,-4.667 10.425,-10.426 V 186.149 c 0.001,-3.283 -1.546,-6.373 -4.173,-8.343 z M 245,23.455 462.185,186.15 389.94,240.268 V 141.063 H 100.067 v 99.203 L 27.822,186.145 Z M 369.088,255.886 245,348.839 120.918,255.885 v -93.972 h 248.17 z M 20.852,469.149 V 206.977 l 217.897,163.232 c 5.38,3.763 10.65,1.39 12.503,0 L 469.148,206.986 v 262.163 z"
+         id="path2-1"
+         inkscape:connector-curvature="0"
+         style="fill:#bf9a2f;fill-opacity:1" />
+      <rect
+         x="185.369"
+         y="198.464"
+         width="121.212"
+         height="20.851"
+         id="rect4"
+         style="fill:#bf9a2f;fill-opacity:1" />
+      <rect
+         x="185.369"
+         y="245.312"
+         width="121.212"
+         height="20.851"
+         id="rect6"
+         style="fill:#bf9a2f;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
