@@ -4,8 +4,9 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Amiri', serif;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 .header-details {
@@ -16,6 +17,10 @@ body {
 
 a {
   color: rgb(59, 59, 59);
+}
+a:hover{
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 .social-buttons,
@@ -102,6 +107,7 @@ margin-bottom: 0;
   color:white;
   padding: 10px 0;
 }
+
 
 .tilesWrap li:before {
 	content: '';
@@ -248,6 +254,29 @@ section div h3 {
 .box:hover::after {
     opacity: 1;
 }
+
+.btn-style{
+  border: none;
+  margin: 12px;
+  padding: 8px;
+  width: 20%;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-size: 200%;
+  transition: 0.6s;
+  background-image: linear-gradient(to left,#000,#bf902f,#bf902f);
+}
+
+.btn-style:hover{
+  background-position: right;
+}
+
+
+
+
 
 .carousel-item {
   height: 450px;
@@ -523,13 +552,6 @@ section div h3 {
 }
 
 
-footer#main-footer {
-  background: rgb(191, 154, 47);
-  background: radial-gradient(circle, rgba(191, 154, 47, 1) 0%, rgba(54, 43, 13, 1) 6%, rgba(61, 49, 15, 1) 12%, rgba(0, 0, 0, 1) 100%);
-  text-align: center;
-  color: var(--main-color);
-  
-}
 
 #page-header {
   height: auto;
@@ -633,6 +655,25 @@ section div h3 {
 }
 
 
+section div div div > a {
+  display: block;
+  padding: 10px;
+  font-weight: 700;
+  
+}
+
+section div div div > a:hover  {
+
+ text-decoration: none;
+ color: var(--main-color) !important;     
+}
+
+section div div div > p {
+  
+  padding: 2px;
+  font-weight: 700;
+  
+}
 
 
 /* go up button */
@@ -642,9 +683,9 @@ section div h3 {
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: 10px;
   /* Place the button at the bottom of the page */
-  left: 20px;
+  left: 5px;
   /* Place the button 30px from the left */
   z-index: 99;
   /* Make sure it does not overlap */
