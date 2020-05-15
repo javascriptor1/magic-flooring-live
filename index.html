@@ -30,6 +30,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(document).ready(function(){
+      $("#myModal").modal('show');
+    });
+  </script>
 </head>
 <body>
   <section >
@@ -159,8 +164,30 @@
       <li class="nav-item active ">
         <a href="index.html" class="nav-link" style="font-size: large;">الرئيسية</a>
       </li>
-      <li class="nav-item">
-          <a href="productAR.html" class="nav-link" style="font-size: large;">المنتجات</a>
+      <li class="nav-item dropdown">
+        <a href="productAR.html" class="nav-link dropdown-toggle" data-toggle="dropdown" style="font-size: large;">المنتجات</a>
+        <div class="dropdown-menu text-right" style="width: 50px;background: linear-gradient(45deg, #b8942d, #665219);color: rgb(247, 247, 247);">
+            <a href="rezultAR.html" class="dropdown-item">باركيه أوكراني
+              <img  src="img/laminate/rezult/rezult.svg" style="width: 55px;height: 25px;">
+            </a>
+            <a href="classenAR.html" class="dropdown-item">باركيه ألماني
+              <img  src="img/laminate/classen/classen-grey.svg" >
+            </a>
+            <a href="xmagicAR.html" class="dropdown-item">باركيه صيني
+              <img  src="img/laminate/paradise/paradise-dropdown.svg" >
+            </a>
+            <a href="spcAR.html" class="dropdown-item">باركيه ضد الماء
+              <img  src="img/spc/carnival-dropdown.svg" >
+            </a>
+            <a href="skirtingAR.html" class="dropdown-item">نعلات خشبية
+              <img  src="img/laminate/xmagic/xmagic.svg" >
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="wallpaperAR.html"class="dropdown-item">ورق جدران
+              <img  src="img/wallpaper/erismann.svg" >
+            </a>
+        </div>
+         
       </li>
       <li class="nav-item ">
         <a href="galleryAR.html" class="nav-link" style="font-size: large;">معرض الصور</a>
@@ -182,10 +209,76 @@
     </div>
   </nav>
   
-  <div class="corona text-center p-1 bg-danger text-white ">
-      <h3>إعلان لعملاؤنا الكرام بخصوص فايروس كورونا <a target="_blank" class="coronaLink" href="https://drive.google.com/file/d/17Zj5uS8TJk6vaerEksyYG6pUqRxJZRlv/view?usp=sharing">اضغط هنا</a></h3>
+  <div class="text-center p-1 bg-danger ">
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong" style="cursor: pointer;border: none;">
+  إعلان بخصوص فايروس كورونا
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLongTitle">إعلان بخصوص فايروس كورونا</h5>
+        <img src="img/mf-logo.svg" alt="شعار">
+      </div>
+      <div class="modal-body" style="color: #000;text-align: right; line-height: 1.5;">
+        <p>
+          عملاؤنا الكرام ،، 
+        </p>
+        <p>نحرص في الأرضيات الساحرة على سلامتكم وصحتكم.  فيما يلي نبذة سريعة عن الإجراءات التي نتبعها أثناء قيامنا بأعمال التركيب في مواقعكم ( السكنية  والتجارية على حد سواء ) : </p>
+          <ul>
+            <li>لبس القفازات وإرتداء الكمامات لجميع أفراد فريق التركيب في الموقع.</li>
+            <li>         تعقيم البضاعة وعدة التركيب قبل دخولها إلى موقع العميل. 
+            </li>
+            <li>         وجود المعقمات بشكل دائم مع فريق التركيب واستعماله عند الضرورة. 
+            </li>
+            <li>         تنظيف الموقع بالكامل قبل المغادرة والتأكد من عدم ترك أي أغراض أو مخلفات في الموقع.
+            </li>
+          </ul>
+        <p>
+          وحرصا منا على سلامتكم ، نرجو منكم البقاء خارج مكان التركيب لحين الإنتهاء من جميع أعمال الأرضيات .
+                        نشكر لكم تفهمكم وتعاونكم ونتطلع دائما لخدمتكم في المستقبل.
+          </p>
+        <p style="text-align:left">فريق الأرضيات الساحرة</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Covid-19 message modal end here  -->
+      
       
   </div>
+  <div class="bs-example">
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes to this document before closing?</p>
+                    <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
   <!-- SHOWCASE SLIDER -->
   <section id="showcase ">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -400,7 +493,7 @@
         <div class="row py-4 text-center">
           <div class="col-sm-12 col-md-3">
             <img src="img/quote.svg" alt="احصل على تسعيرة" class="py-2">
-            <h4 class="pb-2"> إطلب تسعيرة ورفع مقاسات</h4>
+            <h4 class="pb-2"> إطلب رفع مقاسات وتسعيرة</h4>
             <button class="p-2 btn-md btn-style font-weight-bold text-center">إرسل</button>
             <br>
             <br>
@@ -440,7 +533,7 @@
           <div class="container">
               <div class="row">
                 <div class="col">
-                  <img src="/img/whatsapp.svg" alt="شعار واتس اب"> <h3>اشترك في خدمة رسائل الواتس أب الدعائية</h3>
+                  <img src="/img/whatsapp.svg" alt="شعار واتس اب" class="pb-2"> <h3>اشترك في خدمة رسائل الواتس أب الدعائية</h3>
                 <p>سجل معنا ليصلك كل جديد عن أخبارنا وعروضنا على الواتس أب</p> 
                 <form class="form-inline justify-content-center" action="POST" data-netlify="true" name="newsletter">
                   <label class="sr-only" for="name">الإسم</label>
@@ -459,22 +552,23 @@
   <section class="pt-4">
     <div class="container">
       <div class="row">
-        <div class="col-6 col-md-3 " >
-         <h3 class="pb-3">المبيعات</h3>
-         <h5 class="pt-2"><img src="img/mobile.svg" alt="جوال"><img class="pr-3" src="/img/whatsapp.svg" alt=""></h5>
-         <a class="click-moile" href="tel:013-8393674">013-8393674</a> 
-         <a class="click-moile" href="tel:0556510943">0556510943</a> 
-         <a class="click-moile" href="tel:0544623312">0544623312</a> 
-        </div>
         <div class="col-6 col-md-3" >
           <h3 class="pb-3">المنتجات</h3>
           <h5><img src="/img/product.svg" alt="منتجاتنا"></h5>
           <p><a href="classenAR.html">باركيه ألماني</a></p>
           <p><a href="rezultAR.html">باركيه أوكراني</a hre></p>
           <p><a href="xmagicAR.html">باركيه صيني</a></p>
+          <p><a href="spcAR.html.html">باركيه ضد الماء</a></p>
           <p><a href="skirtingAR.html">نعلات خشبية</a></p>
           <p><a href="wallpaperAR.html">ورق جدران</a></p>
         </div>
+        <div class="col-6 col-md-3 " >
+          <h3 class="pb-3">المبيعات</h3>
+          <h5 class="pt-2"><img src="img/mobile.svg" alt="جوال"><img class="pr-3" src="/img/whatsapp.svg" alt=""></h5>
+          <a class="click-moile" href="tel:013-8393674">013-8393674</a> 
+          <a class="click-moile" href="tel:0556510943">0556510943</a> 
+          <a class="click-moile" href="tel:0544623312">0544623312</a> 
+         </div>
         <div class="col-6 col-md-3" >
           <h3 class="pb-3">إتصل بنا</h3>
           <h5><img src="/img/tel.svg" alt="اتصل بنا"></h5>
@@ -499,6 +593,7 @@
     </div>
 
   </section>
+
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.svg" alt="للأعلى"></button>
   <footer  class="text-center">
     <div class="container">
@@ -528,6 +623,8 @@
         </div>
     </div>
   </footer>
+
+  
      <!-- LOADER START -->
     
    <!-- LOADER END -->
@@ -562,7 +659,10 @@
             time: 2000
         });
     });
+
+  
   </script>
+ 
    <!-- <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '982fd601-b528-4ed0-b80e-c1404af0eee8', f: true }); done = true; } }; })();</script>-->
  <script type=”application/ld+json”> 
 { “@context” : “https://magic-flooring.me”,
