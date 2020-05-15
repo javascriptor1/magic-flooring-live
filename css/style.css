@@ -536,25 +536,6 @@ section div h3 {
   color: rgb(191, 154, 47, 1);
 }
 
-/* #testimonial-section {
-  background: url("../img/testmonial.jpg"); */
-  /* background-attachment: fixed;*/
-  /* background-repeat: no-repeat;
-  text-align: center; */
-
-
-}
-
-/* .dark-overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-
 
 #page-header {
   height: auto;
@@ -586,7 +567,7 @@ section div h3 {
   padding: 5px;
 }
 
-
+/* 
 #faq .card {
   border: #444;
 }
@@ -599,7 +580,7 @@ section div h3 {
 #faq .card-body,
 #faq .card-header {
   background: #333;
-}
+} */
 
 .btn-classen {
 
@@ -759,6 +740,10 @@ section div div div > p {
             transform: translateY(0) rotate(45deg);
     opacity: 1;
   }
+}
+
+#footer-policy a:hover{
+  color:var(--main-color);
 }
 
 

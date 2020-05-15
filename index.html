@@ -223,7 +223,7 @@
         <h5 class="modal-title text-dark" id="exampleModalLongTitle">إعلان بخصوص فايروس كورونا</h5>
         <img src="img/mf-logo.svg" alt="شعار">
       </div>
-      <div class="modal-body" style="color: #000;text-align: right; line-height: 1.5;">
+      <div class="modal-body text-dark text-right" style=" line-height: 1.5;">
         <p>
           عملاؤنا الكرام ،، 
         </p>
@@ -251,34 +251,7 @@
   </div>
 </div>
 <!-- Covid-19 message modal end here  -->
-      
-      
   </div>
-  <div class="bs-example">
-    <div id="myModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Confirmation</h5>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>Do you want to save changes to this document before closing?</p>
-                    <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
   <!-- SHOWCASE SLIDER -->
   <section id="showcase ">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -489,32 +462,32 @@
      <!-- Services getting started star here -->
       <section>
        <div class="container">
-         <h2 class="text-center">إبدأ تجربتك<img src="img/getting-started.svg" alt="ابدا تجربتك">  </h2>
+         <h3 class="text-center">إبدأ تجربتك<img src="img/getting-started.svg" alt="ابدا تجربتك">  </h3>
         <div class="row py-4 text-center">
           <div class="col-sm-12 col-md-3">
             <img src="img/quote.svg" alt="احصل على تسعيرة" class="py-2">
-            <h4 class="pb-2"> إطلب رفع مقاسات وتسعيرة</h4>
+            <h5 class="pb-2"> إطلب رفع مقاسات وتسعيرة</h5>
             <button class="p-2 btn-md btn-style font-weight-bold text-center">إرسل</button>
             <br>
             <br>
           </div>
           <div class="col-sm-12 col-md-3">
             <img src="img/sample.svg" alt="اطلب مندوب" class="py-2">
-            <h4 class="pb-2"> إطلب المندوب مع العينات</h4>
+            <h5 class="pb-2"> إطلب المندوب مع العينات</h5>
             <button class="p-2 btn-md btn-style font-weight-bold text-center">إرسل</button>
             <br>
             <br>
           </div>
           <div class="col-sm-12 col-md-3">
             <img src="img/installation.svg" alt="إحجز موعد تركيب" class="py-2">
-            <h4 class="pb-2"> إحجز موعد تركيب</h4>
+            <h5 class="pb-2"> إحجز موعد تركيب</h5>
             <button class="p-2 btn-md btn-style font-weight-bold text-center">إحجز</button>
             <br>
             <br>
           </div>
           <div class="col-sm-12 col-md-3">
             <img src="img/maintainance.svg" alt="إحجز موعد صيانة" class="py-2">
-            <h4 class="pb-2"> إحجز موعد صيانة</h4>
+            <h5 class="pb-2"> إحجز موعد صيانة</h5>
             <button class="p-2 btn-md btn-style font-weight-bold text-center">إحجز</button>
             <br>
             <br>
@@ -611,10 +584,10 @@
                  </section>
               </div>
               <div class="col-md-4">
-                <section >
-                  <a href="https://magic-flooring.me/sitemap.html" style="text-decoration: none;color: inherit;" class="pl-3">خريطة الموقع</a>
-                  <a href="https://magic-flooring.me/siteusage.html" style="text-decoration: none;color: inherit;"class="pl-3">اتفاقية استخدام الموقع</a>
-                  <a href="https://magic-flooring.me/privacy.html" style="text-decoration: none;color: inherit;"class="pl-3">سياسة الخصوصية</a>
+                <section id="footer-policy" >
+                  <a  href="https://magic-flooring.me/sitemap.html" style="text-decoration: none" class="pl-3">خريطة الموقع</a>
+                  <a href="https://magic-flooring.me/siteusage.html" style="text-decoration: none"class="pl-3">اتفاقية استخدام الموقع</a>
+                  <a href="https://magic-flooring.me/privacy.html" style="text-decoration: none"class="pl-3">سياسة الخصوصية</a>
                  </section>
               </div>
              
@@ -639,6 +612,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" 
   integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossorigin="anonymous"></script>
+
+  <!-- -- for animating color board photos -->
     <script>
     anime({
       targets: '#text-logo path',
@@ -659,10 +634,7 @@
             time: 2000
         });
     });
-
-  
   </script>
- 
    <!-- <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '982fd601-b528-4ed0-b80e-c1404af0eee8', f: true }); done = true; } }; })();</script>-->
  <script type=”application/ld+json”> 
 { “@context” : “https://magic-flooring.me”,
