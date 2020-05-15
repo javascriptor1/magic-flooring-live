@@ -467,7 +467,126 @@
           <div class="col-sm-12 col-md-3">
             <img src="img/quote.svg" alt="احصل على تسعيرة" class="py-2">
             <h5 class="pb-2"> إطلب رفع مقاسات وتسعيرة</h5>
-            <button class="p-2 btn-md btn-style font-weight-bold text-center">إرسل</button>
+            <button class="p-2 btn-md btn-style font-weight-bold text-center" data-toggle="modal" data-target="#exampleModal">سجل طلبك</button>
+
+          <!-- modal start here -->
+              
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" dir="rtl">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">طلب رفع مقاسات وتسعيرة</h5>
+        <img src="img/mf-logo.svg" alt="شعار">
+        </div>
+      <div class="modal-body" >
+        <form action="POST" data-netlify="true" name="measurementAR" >
+            <div class="card p-4">
+              <div class="card-body">
+                <div class="row">
+                    
+                     <div class="col-md-6">
+                    <div class="form-group ">
+                      <input type="text" class="form-control text-right" placeholder="* الإسم " name="fullnameAR" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control text-right" placeholder="* رقم الجوال" name="phonenumberAR" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control text-right" placeholder="المدينة والحي" name="cityAR">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <select name="flooring-type" required style="width: 340px;">
+                            <option value="" disabled selected>اختر المنتج المطلوب</option>
+                            <option value="Laminate flooring" name="laminate">أرضيات خشبية باركيه</option>
+                            <option  value="SPC">أرضيات ضد الماء</option>
+                            <option  value="Skirting">نعلات</option>
+                            <option  value="Wallpaper">ورق جدران</option>
+                        </select>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input class="form-control text-right" placeholder="  الرسالة" style="height: 133px;" name="messageAR"  autocomplete="off"></input>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-block " style="font-size: large;background:#b8942d;" value="إرسل">
+                  </div>
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+    </form>
+   
+      </div>
+     
+    </div>
+  </div>
+
+          <!-- modal end here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <br>
             <br>
           </div>

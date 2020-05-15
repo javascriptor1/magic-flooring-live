@@ -9,6 +9,39 @@ body {
   scroll-behavior: smooth;
 }
 
+:focus::-webkit-input-placeholder{
+opacity: 0;
+-webkit-transition: opacity 0.4s ease;
+-moz-transition: opacity 0.4s ease;
+-ms-transition: opacity 0.4s ease;
+-o-transition: opacity 0.4s ease;
+transition: opacity 0.4s ease; 
+}
+:focus::-moz-input-placeholder{
+opacity: 0;
+-webkit-transition: opacity 0.4s ease;
+-moz-transition: opacity 0.4s ease;
+-ms-transition: opacity 0.4s ease;
+-o-transition: opacity 0.4s ease;
+transition: opacity 0.4s ease; 
+}
+:focus:-ms-input-placeholder{
+opacity: 0;
+-webkit-transition: opacity 0.4s ease;
+-moz-transition: opacity 0.4s ease;
+-ms-transition: opacity 0.4s ease;
+-o-transition: opacity 0.4s ease;
+transition: opacity 0.4s ease; 
+}
+:focus:-moz-input-placeholder{
+opacity: 0;
+-webkit-transition: opacity 0.4s ease;
+-moz-transition: opacity 0.4s ease;
+-ms-transition: opacity 0.4s ease;
+-o-transition: opacity 0.4s ease;
+transition: opacity 0.4s ease; 
+}
+
 .header-details {
 
   font-weight: bold;
