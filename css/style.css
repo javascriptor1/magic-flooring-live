@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: "amiri",Arial, Helvetica, sans-serif;
+  src: url(../fonts/Amiri-Bold.ttf);
+} */
+
 :root {
   --main-color: #bf9a2f;
 }
@@ -7,7 +12,7 @@ html{
 
 body {
   overflow-x: hidden;
-  font-family: 'Amiri', serif;
+  font-family: 'anton', serif;
   font-size: 14px;
 
 }
@@ -304,7 +309,7 @@ background: var(--main-color);
 }
 
 .carousel-image-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.699)), url("../img/page.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.699)), url("../img/paradise.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -326,6 +331,25 @@ background: var(--main-color);
   background-position: bottom;
 }
 
+/* paradise carousel start here */
+.carousel-image-4-1 {
+  background: url("../img/laminate/paradise/139-slider.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.carousel-image-5-1 {
+  background: url("../img/laminate/paradise/604-slider.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.carousel-image-6-1 {
+  background: url("../img/laminate/paradise/130-slider.png");
+  background-size: cover;
+  background-position: center;
+}
+/* paradise carousel end here */
 .carousel-image-7 {
   background: url("../img/laminate/classen/33572.jpg");
   background-size: cover;
@@ -345,13 +369,13 @@ background: var(--main-color);
 }
 
 .carousel-image-10 {
-  background: url("../img/laminate/rezult/141.jpg");
+  background: url("../img/laminate/rezult/141-small.jpg");
   background-size: cover;
   background-position: bottom;
 }
 
 .carousel-image-11 {
-  background: url("../img/laminate/rezult/290.jpg");
+  background: url("../img/laminate/rezult/290-small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -881,4 +905,15 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.warranty{
+  position: relative;
+}
+
+.warranty img:nth-child(7){
+  position: absolute;
+  top: 180px;
+  left: 5px;
+  transform: rotate(-45deg);
 }

@@ -1,19 +1,14 @@
-
-
-    let loader = document.getElementById("loader");
-      window.onload = function() {
-      loader.style.display = 'none';
-    }
- 
-
+    // let loader = document.getElementById("loader");
+    //   window.onload = function() {
+    //   loader.style.display = 'none';
+    // }
 $(document).on('click', '[data-toggle="lightbox"]', function(event){
   event.preventDefault();
   $(this).ekkoLightbox();
 });
 
-//Get the button:
-mybutton = document.getElementById("myBtn");
 
+mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -65,26 +60,83 @@ function topFunction() {
     let spc
 
     if (selectedFlooring === "defualt"){
-      alert (" يرجى اختيار نوعية الباركيه لحساب السعر")
+      Swal.fire({
+        title: 'خطأ!',
+        text: 'يرجى اختيار نوع الباركيه المطلوب لحساب التكلفة !',
+        icon: 'error',
+        confirmButtonText: 'OK',
+        width: 355
+      });
     }
 
     
     if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
       chineseCost = areaAfterWastage * 55
-      document.getElementById("cost").innerText = Math.round(chineseCost)
+      if (chineseCost <750 ){
+        document.getElementById("area").innerText = "00.00";
+        document.getElementById("cost").innerText = "00.00";
+        Swal.fire({
+          title: 'المساحة صغيرة!',
+          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
+          icon: 'info',
+          confirmButtonText: 'OK',
+          width: 355
+        });
+
+      } else{
+        document.getElementById("cost").innerText = Math.round(chineseCost)
+      }
+     
     }
     if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5)){
       cost7mm = areaAfterWastage * 60
-      document.getElementById("cost").innerText = Math.round(cost7mm)
+      if (cost7mm < 750){
+        document.getElementById("area").innerText = "00.00"
+        document.getElementById("cost").innerText = "00.00"
+        Swal.fire({
+          title: 'المساحة صغيرة!',
+          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
+          icon: 'info',
+          confirmButtonText: 'OK',
+          width: 355
+        });
+      } else {
+        document.getElementById("cost").innerText = Math.round(cost7mm)
+      }
+     
     }
     if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
       cost8mm = areaAfterWastage * 65
-      document.getElementById("cost").innerText = Math.round(cost8mm)
+      if (cost8mm < 750){
+        document.getElementById("area").innerText = "00.00"
+        document.getElementById("cost").innerText = "00.00"
+        Swal.fire({
+          title: 'المساحة صغيرة!',
+          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
+          icon: 'info',
+          confirmButtonText: 'OK',
+          width: 355
+        });
+      } else {
+        document.getElementById("cost").innerText = Math.round(cost8mm)
+      }
     }
     if (selectedFlooring === "spc" && ( width >0.5 && length >0.5)){
       spc = areaAfterWastage * 100
+      if (spc < 750){
+        document.getElementById("area").innerText = "00.00"
+        document.getElementById("cost").innerText = "00.00"
+        Swal.fire({
+          title: 'المساحة صغيرة!',
+          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
+          icon: 'info',
+          confirmButtonText: 'OK',
+          width: 355
+        });
+      } else {
       document.getElementById("cost").innerText = Math.round(spc)
     }
+  }
 })
 
   // DISABLE SCROLL IN INPUT FIELDS TYPED NUMBER
