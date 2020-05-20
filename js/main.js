@@ -60,9 +60,11 @@ function topFunction() {
     let spc
 
     if (selectedFlooring === "defualt"){
+        document.getElementById("area").innerText = "00.00";
+        document.getElementById("cost").innerText = "00.00";
       Swal.fire({
-        title: 'خطأ!',
-        text: 'يرجى اختيار نوع الباركيه المطلوب لحساب التكلفة !',
+        title: 'خطأ! Error',
+        text: 'يرجى اختيار نوع الباركيه المطلوب لحساب التكلفة  Please choose flooring type !',
         icon: 'error',
         confirmButtonText: 'OK',
         width: 355
@@ -76,11 +78,11 @@ function topFunction() {
         document.getElementById("area").innerText = "00.00";
         document.getElementById("cost").innerText = "00.00";
         Swal.fire({
-          title: 'المساحة صغيرة!',
-          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
-          icon: 'info',
+          title: 'المساحة صغيرة' + "\n" + 'Area is small ',
+          text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+          icon: 'info', 
           confirmButtonText: 'OK',
-          width: 355
+          width: 400
         });
 
       } else{
@@ -94,11 +96,11 @@ function topFunction() {
         document.getElementById("area").innerText = "00.00"
         document.getElementById("cost").innerText = "00.00"
         Swal.fire({
-          title: 'المساحة صغيرة!',
-          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
-          icon: 'info',
+          title: 'المساحة صغيرة' + "\n" + 'Area is small ',
+          text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+          icon: 'info', 
           confirmButtonText: 'OK',
-          width: 355
+          width: 400
         });
       } else {
         document.getElementById("cost").innerText = Math.round(cost7mm)
@@ -111,11 +113,11 @@ function topFunction() {
         document.getElementById("area").innerText = "00.00"
         document.getElementById("cost").innerText = "00.00"
         Swal.fire({
-          title: 'المساحة صغيرة!',
-          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
-          icon: 'info',
+          title: 'المساحة صغيرة' + "\n" + 'Area is small ',
+          text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+          icon: 'info', 
           confirmButtonText: 'OK',
-          width: 355
+          width: 400
         });
       } else {
         document.getElementById("cost").innerText = Math.round(cost8mm)
@@ -127,11 +129,11 @@ function topFunction() {
         document.getElementById("area").innerText = "00.00"
         document.getElementById("cost").innerText = "00.00"
         Swal.fire({
-          title: 'المساحة صغيرة!',
-          text: 'تطبق سياسة الحد الأدنى للتركيب - تكلفة التركيب 750 ريال !',
-          icon: 'info',
+          title: 'المساحة صغيرة' + "\n" + 'Area is small ',
+          text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+          icon: 'info', 
           confirmButtonText: 'OK',
-          width: 355
+          width: 400
         });
       } else {
       document.getElementById("cost").innerText = Math.round(spc)
