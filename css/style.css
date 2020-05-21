@@ -240,7 +240,7 @@ background: var(--main-color);
 }
 
 .navbar .nav-item.active {
-  border-right: #ccc 1px solid;
+  border-right: var(--main-color) 1px solid;
 }
 
 .box {
@@ -321,19 +321,6 @@ background: var(--main-color);
   background-size: cover;
   background-position: bottom;
 }
-
-.carousel-image-5 {
-  background: url("../img/laminate/139.png");
-  background-size: cover;
-  background-position: bottom;
-}
-
-.carousel-image-6 {
-  background: url("../img/laminate/165.png");
-  background-size: cover;
-  background-position: bottom;
-}
-
 /* paradise carousel start here */
 .carousel-image-4-1 {
   background: url("../img/laminate/paradise/139-slider.jpg");
@@ -574,6 +561,7 @@ background: var(--main-color);
   padding-right: 5px;
   padding-left: 5px;
 }
+
 
 #page-header h1 {
   font-weight: 700;
@@ -919,4 +907,12 @@ input[type=number] {
   top: 180px;
   left: 5px;
   transform: rotate(-45deg);
+}
+
+.logo-15years{
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  transform: rotate(45deg);
+
 }
