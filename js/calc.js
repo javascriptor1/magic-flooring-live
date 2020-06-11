@@ -97,7 +97,7 @@ if (length <1 || width <1){
     }
   }
   if (selectedFlooring === "spc" && ( width >0.5 && length >0.5)){
-    spc = areaAfterWastage * 100
+    spc = areaAfterWastage * 75
     if (spc < 750){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
