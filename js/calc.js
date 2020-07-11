@@ -64,7 +64,7 @@ if (length <1 || width <1){
    
   }
   if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5)){
-    cost7mm = areaAfterWastage * 60
+    cost7mm = areaAfterWastage * 65
     if (cost7mm < 750){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
@@ -81,7 +81,7 @@ if (length <1 || width <1){
    
   }
   if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
-    cost8mm = areaAfterWastage * 65
+    cost8mm = areaAfterWastage * 70
     if (cost8mm < 750){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
@@ -97,7 +97,7 @@ if (length <1 || width <1){
     }
   }
   if (selectedFlooring === "spc" && ( width >0.5 && length >0.5)){
-    spc = areaAfterWastage * 100
+    spc = areaAfterWastage * 75
     if (spc < 750){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
