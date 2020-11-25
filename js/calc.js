@@ -47,12 +47,12 @@ if (length <1 || width <1){
   
   if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
     chineseCost = areaAfterWastage * 55
-    if (chineseCost <750 ){
+    if (chineseCost <1000 ){
       document.getElementById("area").innerText = "00.00";
       document.getElementById("cost").innerText = "00.00";
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
@@ -64,13 +64,13 @@ if (length <1 || width <1){
    
   }
   if (selectedFlooring === "7mm" && ( width >0.5 && length >0.5)){
-    cost7mm = areaAfterWastage * 65
-    if (cost7mm < 750){
+    cost7mm = areaAfterWastage * 70
+    if (cost7mm < 1000){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 1000 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
@@ -81,13 +81,13 @@ if (length <1 || width <1){
    
   }
   if (selectedFlooring === "8mm" && ( width >0.5 && length >0.5)){
-    cost8mm = areaAfterWastage * 70
-    if (cost8mm < 750){
+    cost8mm = areaAfterWastage * 75
+    if (cost8mm < 1000){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 1000 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
@@ -98,12 +98,12 @@ if (length <1 || width <1){
   }
   if (selectedFlooring === "spc" && ( width >0.5 && length >0.5)){
     spc = areaAfterWastage * 75
-    if (spc < 750){
+    if (spc < 1000){
       document.getElementById("area").innerText = "00.00"
       document.getElementById("cost").innerText = "00.00"
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 750 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
