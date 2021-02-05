@@ -52,7 +52,7 @@ if (length <1 || width <1){
       document.getElementById("cost").innerText = "00.00";
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 1000 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
@@ -103,7 +103,7 @@ if (length <1 || width <1){
       document.getElementById("cost").innerText = "00.00"
       Swal.fire({
         title: 'المساحة صغيرة' + "\n" + 'Area is small ',
-        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 750 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
+        text:'تطبق سياسة الحد الأدنى للتركيب  تكلفة التركيب 1000 ريال '+  "\n" + 'A minimum charge policy apply. The cost is 1000 SAR ',
         icon: 'info', 
         confirmButtonText: 'OK',
         width: 400
