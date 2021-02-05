@@ -327,19 +327,19 @@ background: var(--main-color);
 }
 /* paradise carousel start here */
 .carousel-image-4-1 {
-  background: url("../img/laminate/paradise/139-slider.jpg");
-  background-size: cover;
+  background: url("../img/psmoulding/design5.jpg");
+  background-size:contain;
   background-position: top;
 }
 
 .carousel-image-5-1 {
-  background: url("../img/laminate/paradise/604-slider.jpg");
-  background-size: cover;
+  background: url("../img/psmoulding/design2.jpg");
+  background-size: contain;
   background-position: bottom;
 }
 
 .carousel-image-6-1 {
-  background: url("../img/laminate/paradise/130-slider.png");
+  background: url("../img/psmoulding/fib-120c.jpg");
   background-size: cover;
   background-position: center;
 }
