@@ -46,7 +46,7 @@ if (length <1 || width <1){
 
   
   if (selectedFlooring === "china" && ( width >0.5 && length >0.5)){
-    chineseCost = areaAfterWastage * 56
+    chineseCost = areaAfterWastage * 59
     if (chineseCost <1000 ){
       document.getElementById("area").innerText = "00.00";
       document.getElementById("cost").innerText = "00.00";
